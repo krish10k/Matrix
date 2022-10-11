@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:neo/widgets/profile.dart';
+import 'package:neo/widgets/courseCard.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
@@ -22,10 +23,58 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
+      body: Container(
+        margin: const EdgeInsets.all(16.0),
         child: ListView(
           children: <Widget>[
-            Column(children: [Profile()])
+            Column(children: [
+              Profile(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  const Text(
+                    'Course Training Programmes',
+                    style: TextStyle(
+                        fontSize: 14,
+                        height: 2,
+                        fontWeight: FontWeight.w600,
+                        color: Color.fromARGB(255, 33, 33, 33)),
+                  ),
+                  Card(
+                    elevation: 3,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4)),
+                    color: Colors.white,
+                    child: Padding(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+                      child: Text("Upcoming Trainings"),
+                    ),
+                  )
+                ],
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    // ListView(
+                    //   scrollDirection: Axis.horizontal,
+                    //   children: [
+                    CourseCard(),
+                    CourseCard(),
+                    CourseCard(),
+                    CourseCard(),
+                    CourseCard(),
+                    CourseCard(),
+                    CourseCard(),
+                    CourseCard(),
+                    //   ],
+                    // )
+                  ],
+                ),
+              )
+            ])
           ],
         ),
       ),

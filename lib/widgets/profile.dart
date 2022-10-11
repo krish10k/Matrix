@@ -11,7 +11,7 @@ class Profile extends StatelessWidget {
         //  Center(
         //   child:
         Container(
-      margin: const EdgeInsets.all(16.0),
+      margin: EdgeInsets.only(top: 16, right: 8),
       child: Card(
         elevation: 3,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
@@ -115,7 +115,7 @@ class Profile extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                "Pune, Maharashtra",
+                                "Pune,Maharashtra",
                                 style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w600,
