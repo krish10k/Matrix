@@ -114,12 +114,15 @@ class Profile extends StatelessWidget {
                                   color: Colors.grey[400],
                                 ),
                               ),
-                              Text(
-                                "Pune,Maharashtra",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.grey[900],
+                              Padding(
+                                padding: const EdgeInsets.only(top: 4.0),
+                                child: Text(
+                                  "Pune, Maharashtra",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.grey[900],
+                                  ),
                                 ),
                               )
                             ],
@@ -130,7 +133,7 @@ class Profile extends StatelessWidget {
                   Container(
                       height: 76,
                       width: 164,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           border: Border(
                               left: BorderSide(
                                   width: 1,
@@ -150,12 +153,15 @@ class Profile extends StatelessWidget {
                                   color: Colors.grey[400],
                                 ),
                               ),
-                              Text(
-                                "Technology",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.grey[900],
+                              Padding(
+                                padding: const EdgeInsets.only(top: 4.0),
+                                child: Text(
+                                  "Technology",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.grey[900],
+                                  ),
                                 ),
                               )
                             ],
@@ -186,12 +192,15 @@ class Profile extends StatelessWidget {
                                   color: Colors.grey[400],
                                 ),
                               ),
-                              Text(
-                                "Technology",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.grey[900],
+                              Padding(
+                                padding: const EdgeInsets.only(top: 4.0),
+                                child: Text(
+                                  "Technology",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.grey[900],
+                                  ),
                                 ),
                               )
                             ],
@@ -222,12 +231,15 @@ class Profile extends StatelessWidget {
                                   color: Colors.grey[400],
                                 ),
                               ),
-                              Text(
-                                "data",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.grey[900],
+                              Padding(
+                                padding: const EdgeInsets.only(top: 4.0),
+                                child: Text(
+                                  "data",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.grey[900],
+                                  ),
                                 ),
                               )
                             ],
@@ -258,12 +270,15 @@ class Profile extends StatelessWidget {
                                   color: Colors.grey[400],
                                 ),
                               ),
-                              Text(
-                                "data",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.grey[900],
+                              Padding(
+                                padding: const EdgeInsets.only(top: 4.0),
+                                child: Text(
+                                  "data",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.grey[900],
+                                  ),
                                 ),
                               )
                             ],

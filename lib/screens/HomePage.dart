@@ -48,7 +48,16 @@ class _HomePageState extends State<HomePage> {
                     child: Padding(
                       padding:
                           EdgeInsets.symmetric(vertical: 8, horizontal: 10),
-                      child: Text("Upcoming Trainings"),
+                      child: Row(
+                        children: [
+                          Text("Upcoming Trainings"),
+                          Icon(
+                            Icons.arrow_drop_down_outlined,
+                            color: Colors.grey[500],
+                            size: 15,
+                          ),
+                        ],
+                      ),
                     ),
                   )
                 ],
