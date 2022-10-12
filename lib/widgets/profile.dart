@@ -11,7 +11,7 @@ class Profile extends StatelessWidget {
         //  Center(
         //   child:
         Container(
-      margin: EdgeInsets.only(top: 16, right: 8),
+      margin: const EdgeInsets.only(top: 16, right: 8),
       child: Card(
         elevation: 3,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
@@ -30,7 +30,7 @@ class Profile extends StatelessWidget {
                   Container(
                     width: 120.0,
                     height: 120.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
                         fit: BoxFit.cover,
@@ -79,217 +79,222 @@ class Profile extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  // Wrap(
-                  //   children: [
-                  // Column(
-                  //   children: <Widget>[
+              Container(
+                decoration: const BoxDecoration(
+                    border: Border(
+                        top: BorderSide(
+                            width: 1,
+                            color: Color.fromARGB(255, 235, 233, 233)))),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    // Wrap(
+                    //   children: [
+                    // Column(
+                    //   children: <Widget>[
 
-                  Container(
-                      height: 76,
-                      width: 164,
-                      decoration: BoxDecoration(
-                          border: Border(
-                              // right: BorderSide(
-                              //     width: 1,
-                              //     color: Color.fromARGB(255, 235, 233, 233))
-                              )),
-                      child: Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Branch",
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.grey[400],
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 4.0),
-                                child: Text(
-                                  "Pune, Maharashtra",
+                    SizedBox(
+                        height: 76,
+                        width: 164,
+                        child: Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  "Branch",
                                   style: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.grey[900],
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.grey[400],
                                   ),
                                 ),
-                              )
-                            ],
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 4.0),
+                                  child: Text(
+                                    "Pune, Maharashtra",
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.grey[900],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                      )),
+                        )),
 
-                  Container(
-                      height: 76,
-                      width: 164,
-                      decoration: const BoxDecoration(
-                          border: Border(
-                              left: BorderSide(
-                                  width: 1,
-                                  color: Color.fromARGB(255, 235, 233, 233)))),
-                      child: Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Department",
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.grey[400],
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 4.0),
-                                child: Text(
-                                  "Technology",
+                    Container(
+                        height: 76,
+                        width: 164,
+                        decoration: const BoxDecoration(
+                            border: Border(
+                                left: BorderSide(
+                                    width: 1,
+                                    color:
+                                        Color.fromARGB(255, 235, 233, 233)))),
+                        child: Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  "Department",
                                   style: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.grey[900],
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.grey[400],
                                   ),
                                 ),
-                              )
-                            ],
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 4.0),
+                                  child: Text(
+                                    "Technology",
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.grey[900],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                      )),
+                        )),
 
-                  Container(
-                      height: 76,
-                      width: 164,
-                      decoration: BoxDecoration(
-                          border: Border(
-                              left: BorderSide(
-                                  width: 1,
-                                  color: Color.fromARGB(255, 235, 233, 233)))),
-                      child: Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Project",
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.grey[400],
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 4.0),
-                                child: Text(
-                                  "Technology",
+                    Container(
+                        height: 76,
+                        width: 164,
+                        decoration: const BoxDecoration(
+                            border: Border(
+                                left: BorderSide(
+                                    width: 1,
+                                    color:
+                                        Color.fromARGB(255, 235, 233, 233)))),
+                        child: Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  "Project",
                                   style: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.grey[900],
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.grey[400],
                                   ),
                                 ),
-                              )
-                            ],
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 4.0),
+                                  child: Text(
+                                    "Technology",
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.grey[900],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                      )),
+                        )),
 
-                  Container(
-                      height: 76,
-                      width: 164,
-                      decoration: BoxDecoration(
-                          border: Border(
-                              left: BorderSide(
-                                  width: 1,
-                                  color: Color.fromARGB(255, 235, 233, 233)))),
-                      child: Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Email",
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.grey[400],
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 4.0),
-                                child: Text(
-                                  "data",
+                    Container(
+                        height: 76,
+                        width: 164,
+                        decoration: const BoxDecoration(
+                            border: Border(
+                                left: BorderSide(
+                                    width: 1,
+                                    color:
+                                        Color.fromARGB(255, 235, 233, 233)))),
+                        child: Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  "Email",
                                   style: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.grey[900],
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.grey[400],
                                   ),
                                 ),
-                              )
-                            ],
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 4.0),
+                                  child: Text(
+                                    "data_abc@mail.com",
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.grey[900],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                      )),
+                        )),
 
-                  Container(
-                      height: 76,
-                      width: 164,
-                      decoration: BoxDecoration(
-                          border: Border(
-                              left: BorderSide(
-                                  width: 1,
-                                  color: Color.fromARGB(255, 235, 233, 233)))),
-                      child: Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Mobile",
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.grey[400],
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 4.0),
-                                child: Text(
-                                  "data",
+                    Container(
+                        height: 76,
+                        width: 164,
+                        decoration: const BoxDecoration(
+                            border: Border(
+                                left: BorderSide(
+                                    width: 1,
+                                    color:
+                                        Color.fromARGB(255, 235, 233, 233)))),
+                        child: Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  "Mobile",
                                   style: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.grey[900],
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.grey[400],
                                   ),
                                 ),
-                              )
-                            ],
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 4.0),
+                                  child: Text(
+                                    "data",
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.grey[900],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                      )),
-                  //   ],
-                  // )
-                  //  ],
-                  // )
-                ],
+                        )),
+                    //   ],
+                    // )
+                    //  ],
+                    // )
+                  ],
+                ),
               )
             ],
           ),

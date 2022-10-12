@@ -7,7 +7,7 @@ class CourseCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 256,
-      margin: EdgeInsets.only(right: 8),
+      margin: const EdgeInsets.only(right: 8),
       child: Column(
         children: [
           Card(
@@ -16,7 +16,7 @@ class CourseCard extends StatelessWidget {
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
             color: Colors.white,
             child: Padding(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
                   Container(
@@ -143,15 +143,15 @@ class CourseCard extends StatelessWidget {
                   // ),
 
                   ElevatedButton(
-                    child: const Text('Take Course'),
                     style: ElevatedButton.styleFrom(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 56, vertical: 5),
+                      minimumSize: const Size.fromHeight(40),
+                      padding: const EdgeInsets.symmetric(vertical: 5),
                       foregroundColor: Colors.white,
                       backgroundColor:
-                          Color.fromRGBO(57, 201, 62, 1), // foreground
+                          const Color.fromRGBO(64, 193, 115, 1), // foreground
                     ),
                     onPressed: () {},
+                    child: const Text('Take Course'),
                   )
                 ],
               ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:neo/widgets/profile.dart';
-import 'package:neo/widgets/courseCard.dart';
+import 'package:neo/widgets/course_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: <Widget>[
             Column(children: [
-              Profile(),
+              const Profile(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -46,11 +46,19 @@ class _HomePageState extends State<HomePage> {
                         borderRadius: BorderRadius.circular(4)),
                     color: Colors.white,
                     child: Padding(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 8, horizontal: 10),
                       child: Row(
                         children: [
-                          Text("Upcoming Trainings"),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 6.0),
+                            child: Icon(
+                              Icons.open_in_new,
+                              color: Colors.grey[500],
+                              size: 15,
+                            ),
+                          ),
+                          const Text("Upcoming Trainings"),
                           Icon(
                             Icons.arrow_drop_down_outlined,
                             color: Colors.grey[500],
@@ -66,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
+                  children: const <Widget>[
                     // ListView(
                     //   scrollDirection: Axis.horizontal,
                     //   children: [

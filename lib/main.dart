@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:neo/screens/HomePage.dart';
+import 'package:neo/screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
       title: 'Matrix Home',
       theme: ThemeData(
           primarySwatch: Colors.grey,
-          backgroundColor: Color.fromARGB(216, 227, 209, 209)),
-      home: HomePage(title: 'Matrix Home'),
+          backgroundColor: const Color.fromARGB(216, 227, 209, 209)),
+      home: const HomePage(title: 'Matrix Home'),
     );
   }
 }
