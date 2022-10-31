@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:neo/screens/mobile_home_page.dart';
 
 class CourseCard extends StatelessWidget {
   const CourseCard({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 256,
+      width: 328,
       margin: const EdgeInsets.only(right: 8),
       child: Column(
         children: [
@@ -31,7 +31,7 @@ class CourseCard extends StatelessWidget {
                             children: <Widget>[
                               Expanded(
                                 child: Text(
-                                  'Identifying Phishing Attacks Can You Avoid Getting Hooked',
+                                  'Identifying Phishing Attacks Can You Avoid Gedentifying Phishing Attacks Can dentifying Phishing Attacks Can tting Hooked',
                                   style: TextStyle(
                                       fontSize: 14,
                                       height: 2,
@@ -150,7 +150,13 @@ class CourseCard extends StatelessWidget {
                       backgroundColor:
                           const Color.fromRGBO(64, 193, 115, 1), // foreground
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //       builder: (context) => const MobileHomePage()),
+                      // );
+                    },
                     child: const Text('Take Course'),
                   )
                 ],

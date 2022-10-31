@@ -79,9 +79,7 @@ class Profile extends StatelessWidget {
                   )
                 ],
               ),
-              const SizedBox(
-                height: 24,
-              ),
+              Padding(padding: EdgeInsets.only(top: 24)),
               Container(
                 decoration: const BoxDecoration(
                     border: Border(
@@ -96,43 +94,44 @@ class Profile extends StatelessWidget {
                     // Column(
                     //   children: <Widget>[
 
-                    SizedBox(
-                        height: 76,
-                        width: 164,
-                        child: Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Text(
-                                  "Branch",
+                    Container(
+                      // height: 76,
+                      // width: 164,
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              "Branch",
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.grey[400],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 4.0),
+                              child: Expanded(
+                                child: Text(
+                                  "Pune, Maharashtra",
                                   style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w500,
-                                    color: Colors.grey[400],
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.grey[900],
                                   ),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 4.0),
-                                  child: Text(
-                                    "Pune, Maharashtra",
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
-                                      color: Colors.grey[900],
-                                    ),
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        )),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
 
                     Container(
-                        height: 76,
-                        width: 164,
+                        // height: 76,
+                        // width: 164,
                         decoration: const BoxDecoration(
                             border: Border(
                                 left: BorderSide(
@@ -156,12 +155,14 @@ class Profile extends StatelessWidget {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 4.0),
-                                  child: Text(
-                                    "Technology",
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
-                                      color: Colors.grey[900],
+                                  child: Expanded(
+                                    child: Text(
+                                      "Technology",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.grey[900],
+                                      ),
                                     ),
                                   ),
                                 )
@@ -171,8 +172,8 @@ class Profile extends StatelessWidget {
                         )),
 
                     Container(
-                        height: 76,
-                        width: 164,
+                        // height: 76,
+                        // width: 164,
                         decoration: const BoxDecoration(
                             border: Border(
                                 left: BorderSide(
@@ -196,12 +197,14 @@ class Profile extends StatelessWidget {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 4.0),
-                                  child: Text(
-                                    "Technology",
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
-                                      color: Colors.grey[900],
+                                  child: Expanded(
+                                    child: Text(
+                                      "Technology",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.grey[900],
+                                      ),
                                     ),
                                   ),
                                 )
@@ -211,8 +214,8 @@ class Profile extends StatelessWidget {
                         )),
 
                     Container(
-                        height: 76,
-                        width: 164,
+                        // height: 76,
+                        // width: 164,
                         decoration: const BoxDecoration(
                             border: Border(
                                 left: BorderSide(
@@ -236,12 +239,14 @@ class Profile extends StatelessWidget {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 4.0),
-                                  child: Text(
-                                    "data_abc@mail.com",
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
-                                      color: Colors.grey[900],
+                                  child: Expanded(
+                                    child: Text(
+                                      "data_abc@mail.com      dd",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.grey[900],
+                                      ),
                                     ),
                                   ),
                                 )
@@ -251,8 +256,8 @@ class Profile extends StatelessWidget {
                         )),
 
                     Container(
-                        height: 76,
-                        width: 164,
+                        // height: 76,
+                        // width: 164,
                         decoration: const BoxDecoration(
                             border: Border(
                                 left: BorderSide(
@@ -276,12 +281,14 @@ class Profile extends StatelessWidget {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 4.0),
-                                  child: Text(
-                                    "data",
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
-                                      color: Colors.grey[900],
+                                  child: Expanded(
+                                    child: Text(
+                                      "98573837788",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.grey[900],
+                                      ),
                                     ),
                                   ),
                                 )
