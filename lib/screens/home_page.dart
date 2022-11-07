@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:neo/main.dart';
+// import 'package:neo/main.dart';
 import 'package:neo/widgets/profile.dart';
 import 'package:neo/widgets/course_card.dart';
-import 'package:neo/screens/mobile_home_page.dart';
+// import 'package:neo/screens/mobile_home_page.dart';
 import 'package:neo/widgets/mprofile.dart';
 
 class HomePage extends StatefulWidget {
@@ -101,6 +101,8 @@ class _HomePageState extends State<HomePage> {
                               fontWeight: FontWeight.w600,
                               color: Color.fromARGB(255, 33, 33, 33)),
                         ),
+
+                        // dd
                         Card(
                           elevation: 3,
                           shape: RoundedRectangleBorder(

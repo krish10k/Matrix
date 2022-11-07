@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "course_title": "Integer tincidunt ante vel ipsum.",
+        "creator": "Baumbach-Shields",
+        "start_date": "06-Apr-2022",
+        "end_date": "01-07-2022",
+        "time": "9:37 PM"
+    },
+    {
+        "id": 2,
+        "course_title": "Etiam pretium iaculis justo.",
+        "creator": "Cormier, Treutel and Grimes",
+        "start_date": "28-May-2022",
+        "time": "5:48 PM"
+    },
+    {
+        "id": 3,
+        "course_title": "In hac habitasse platea dictumst.",
+        "creator": "Gottlieb-Kohler",
+        "start_date": "21-Oct-2022",
+        "end_date": "30-08-2022",
+        "time": "7:19 AM"
+    },
+    {
+        "id": 4,
+        "course_title": "Quisque id justo sit amet sapien dignissim vestibulum.",
+        "creator": "Gulgowski, Conroy and Witting",
+        "start_date": "21-Jun-2022",
+        "end_date": "07-07-2022",
+        "time": "1:50 PM"
+    },
+    {
+        "id": 5,
+        "course_title": "Maecenas rhoncus aliquam lacus.",
+        "creator": "Hegmann-Schmeler",
+        "start_date": "10-Aug-2022",
+        "time": "5:31 PM"
+    },
+    {
+        "id": 6,
+        "course_title": "Integer a nibh.",
+        "creator": "Wehner-Hoppe",
+        "start_date": "16-Sep-2022",
+        "end_date": "11-07-2022",
+        "time": "1:32 PM"
+    },
+    {
+        "id": 7,
+        "course_title": "Vestibulum ante ipsum primis in faucibus orci ",
+        "creator": "Botsford, Littel and Kessler",
+        "start_date": "12-Nov-2021",
+        "end_date": "17-08-2022",
+        "time": "5:56 AM"
+    },
+    {
+        "id": 8,
+        "course_title": "Morbi non quam nec dui luctus rutrum.",
+        "creator": "Klocko Inc",
+        "start_date": "22-May-2022",
+        "end_date": "21-01-2022",
+        "time": "7:09 PM"
+    },
+    {
+        "id": 9,
+        "course_title": "Pellentesque eget nunc.",
+        "creator": "Mohr-Moore",
+        "start_date": "18-Apr-2022",
+        "end_date": "11-05-2022",
+        "time": "1:22 AM"
+    },
+    {
+        "id": 10,
+        "course_title": "Vestibulum sed magna at nunc commodo placerat.",
+        "creator": "Crona LLC",
+        "start_date": "07-Jun-2022",
+        "end_date": "15-02-2022",
+        "time": "10:47 PM"
+    }
+]
