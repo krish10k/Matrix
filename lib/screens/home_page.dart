@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-// import 'package:neo/main.dart';
+import 'package:neo/model/course.dart';
 import 'package:neo/widgets/profile.dart';
 import 'package:neo/widgets/course_card.dart';
-// import 'package:neo/screens/mobile_home_page.dart';
 import 'package:neo/widgets/mprofile.dart';
+import 'package:http/http.dart' as http;
+import 'dart:core';
+import 'dart:convert';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
@@ -14,6 +16,38 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<Course> _courses = <Course>[];
+  Future fetchCourses() async {
+    try {
+      var url =
+          'https://gist.githubusercontent.com/krish10k/49277be4768df56b8349701027fd1449/raw/b99ecdc6715352a71c40df2fea0b320f6f45f08b/course.json';
+      var response = await http.get(Uri.parse(url));
+      print("output on console");
+
+      var courses = <Course>[];
+      if (response.statusCode == 200) {
+        var coursesJson = json.decode(response.body);
+        for (var courseJson in coursesJson) {
+          courses.add(Course.fromJson(courseJson));
+        }
+        print(courses[1].startDate);
+        return courses;
+      }
+    } catch (e) {
+      print(e);
+    }
+  }
+
+  @override
+  void initState() {
+    fetchCourses().then((value) {
+      setState(() {
+        _courses.addAll(value);
+      });
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     final screenW = MediaQuery.of(context).size.width;
@@ -135,40 +169,62 @@ class _HomePageState extends State<HomePage> {
                     ),
 
               // courses view
+
               mobile
                   ? Wrap(
                       children: [
-                        CourseCard(),
-                        CourseCard(),
-                        CourseCard(),
-                        CourseCard(),
-                        CourseCard(),
-                        CourseCard(),
-                        CourseCard(),
-                        CourseCard(),
+                        // ConstrainedBox(
+                        //   constraints: BoxConstraints(
+                        //       maxHeight: 1000), // for list in list
+                        //   child:
+                        ListView.builder(
+                          physics: const NeverScrollableScrollPhysics(),
+                          shrinkWrap: true,
+                          itemBuilder: (context, index) =>
+                              CourseCard(_courses[index]),
+                          itemCount: _courses?.length ?? 0,
+                        ),
+                        // ),
+                        // CourseCard(),
+                        // CourseCard(),
+                        // CourseCard(),
+                        // CourseCard(),
+                        // CourseCard(),
+                        // CourseCard(),
+                        // CourseCard(),
+                        // CourseCard(),
                       ],
                     )
-                  : SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const <Widget>[
-                          // ListView(
-                          //   scrollDirection: Axis.horizontal,
-                          //   children: [
-                          CourseCard(),
-                          CourseCard(),
-                          CourseCard(),
-                          CourseCard(),
-                          CourseCard(),
-                          CourseCard(),
-                          CourseCard(),
-                          CourseCard(),
-                          //   ],
-                          // )
-                        ],
+                  : ConstrainedBox(
+                      constraints: BoxConstraints(
+                          maxHeight: 400), // imp for adding nexted listview
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        shrinkWrap: true,
+                        itemBuilder: (context, index) =>
+                            CourseCard(_courses[index]),
+                        itemCount: _courses?.length ?? 0,
                       ),
-                    )
+                    ),
+
+              // SingleChildScrollView(
+              //   scrollDirection: Axis.horizontal,
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //     children: const <Widget>[
+
+              //       CourseCard(),
+              //       CourseCard(),
+              //       CourseCard(),
+              //       CourseCard(),
+              //       CourseCard(),
+              //       CourseCard(),
+              //       CourseCard(),
+              //       CourseCard(),
+
+              //     ],
+              //   ),
+              // )
             ])
           ],
         ),

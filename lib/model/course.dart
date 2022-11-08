@@ -1,4 +1,7 @@
-class course {
+// json data link --api
+// https://gist.githubusercontent.com/krish10k/49277be4768df56b8349701027fd1449/raw/b99ecdc6715352a71c40df2fea0b320f6f45f08b/course.json
+
+class Course {
   int? id;
   String? courseTitle;
   String? creator;
@@ -6,7 +9,7 @@ class course {
   String? endDate;
   String? time;
 
-  course(
+  Course(
       {this.id,
       this.courseTitle,
       this.creator,
@@ -14,7 +17,7 @@ class course {
       this.endDate,
       this.time});
 
-  course.fromJson(Map<String, dynamic> json) {
+  Course.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     courseTitle = json['course_title'];
     creator = json['creator'];

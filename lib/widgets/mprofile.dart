@@ -104,183 +104,140 @@ class MProfile extends StatelessWidget {
               Padding(padding: EdgeInsets.only(top: 24)),
               Row(
                 children: [
-                  Expanded(
-                    child: Container(
-                        decoration: const BoxDecoration(
-                            color: Color.fromRGBO(255, 255, 255, 248),
-                            border: Border(
-                                top: BorderSide(
-                              color: Color.fromARGB(255, 235, 233, 233),
-                              width: 1,
-                            ))),
-                        child:
-                            // screenW > 900
-                            //     ? // for mobile screens --->
-                            //     :
-                            Column(
-                          //mainAxisAlignment: MainAxisAlignment.start,
-                          //runAlignment: WrapAlignment.spaceBetween,
-                          children: [
-                            Container(
-                              decoration: const BoxDecoration(
-                                  border: Border(
-                                bottom: BorderSide(
-                                    width: 1,
-                                    color: Color.fromARGB(255, 235, 233, 233)),
-                              )),
-                              child: Expanded(
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Container(
-                                          width: 163.5,
-                                          decoration: const BoxDecoration(
-                                              border: Border(
-                                            right: BorderSide(
-                                                width: 1,
-                                                color: Color.fromARGB(
-                                                    255, 235, 233, 233)),
-                                          )),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(16.0),
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: <Widget>[
-                                                Text(
-                                                  "Branch",
-                                                  style: TextStyle(
-                                                    fontSize: 12,
-                                                    fontWeight: FontWeight.w500,
-                                                    color: Colors.grey[400],
-                                                  ),
-                                                ),
-                                                Padding(
-                                                  padding:
-                                                      const EdgeInsets.only(
-                                                          top: 4.0),
-                                                  child:
-
-                                                      /// wrap
-                                                      Expanded(
-                                                    child: Text(
-                                                      "Pune, Maharashtra      mazaaaa ",
-                                                      style: TextStyle(
-                                                        fontSize: 14,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                        color: Colors.grey[900],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                )
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Column(
-                                      children: [
-                                        Container(
-                                          width: 163.5,
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(16.0),
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: <Widget>[
-                                                Text(
-                                                  "Department",
-                                                  style: TextStyle(
-                                                    fontSize: 12,
-                                                    fontWeight: FontWeight.w500,
-                                                    color: Colors.grey[400],
-                                                  ),
-                                                ),
-                                                Padding(
-                                                  padding:
-                                                      const EdgeInsets.only(
-                                                          top: 4.0),
-                                                  child: Expanded(
-                                                    child: Text(
-                                                      "Technology , Data science team",
-                                                      style: TextStyle(
-                                                        fontSize: 14,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                        color: Colors.grey[900],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                )
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Container(
-                              decoration: const BoxDecoration(
-                                  border: Border(
-                                      bottom: BorderSide(
-                                width: 1,
-                                color: Color.fromARGB(255, 235, 233, 233),
-                              ))),
+                  Container(
+                      decoration: const BoxDecoration(
+                          color: Color.fromRGBO(255, 255, 255, 248),
+                          border: Border(
+                              top: BorderSide(
+                            color: Color.fromARGB(255, 235, 233, 233),
+                            width: 1,
+                          ))),
+                      child:
+                          // screenW > 900
+                          //     ? // for mobile screens --->
+                          //     :
+                          Column(
+                        //mainAxisAlignment: MainAxisAlignment.start,
+                        //runAlignment: WrapAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            decoration: const BoxDecoration(
+                                border: Border(
+                              bottom: BorderSide(
+                                  width: 1,
+                                  color: Color.fromARGB(255, 235, 233, 233)),
+                            )),
+                            child: Expanded(
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  Container(
-                                      width: 300,
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(16.0),
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: <Widget>[
-                                            Text(
-                                              "Email",
-                                              style: TextStyle(
-                                                fontSize: 12,
-                                                fontWeight: FontWeight.w500,
-                                                color: Colors.grey[400],
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                  top: 4.0),
-                                              child: Expanded(
-                                                child: Text(
-                                                  "data_abc@mail.com  v ddd    ",
-                                                  style: TextStyle(
-                                                    fontSize: 14,
-                                                    fontWeight: FontWeight.w600,
-                                                    color: Colors.grey[900],
-                                                  ),
+                                  Column(
+                                    children: [
+                                      Container(
+                                        width: 163.5,
+                                        decoration: const BoxDecoration(
+                                            border: Border(
+                                          right: BorderSide(
+                                              width: 1,
+                                              color: Color.fromARGB(
+                                                  255, 235, 233, 233)),
+                                        )),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(16.0),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: <Widget>[
+                                              Text(
+                                                "Branch",
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.w500,
+                                                  color: Colors.grey[400],
                                                 ),
                                               ),
-                                            )
-                                          ],
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                    top: 4.0),
+                                                child:
+
+                                                    /// wrap
+                                                    Expanded(
+                                                  child: Text(
+                                                    "Pune, Maharashtra      mazaaaa ",
+                                                    style: TextStyle(
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      color: Colors.grey[900],
+                                                    ),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
                                         ),
-                                      )),
+                                      ),
+                                    ],
+                                  ),
+                                  Column(
+                                    children: [
+                                      Container(
+                                        width: 163.5,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(16.0),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: <Widget>[
+                                              Text(
+                                                "Department",
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.w500,
+                                                  color: Colors.grey[400],
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                    top: 4.0),
+                                                child: Expanded(
+                                                  child: Text(
+                                                    "Technology , Data science team",
+                                                    style: TextStyle(
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      color: Colors.grey[900],
+                                                    ),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ],
                               ),
                             ),
-                            Row(
+                          ),
+                          Container(
+                            decoration: const BoxDecoration(
+                                border: Border(
+                                    bottom: BorderSide(
+                              width: 1,
+                              color: Color.fromARGB(255, 235, 233, 233),
+                            ))),
+                            child: Row(
                               children: [
                                 Container(
-                                    width: 163.5,
+                                    width: 300,
                                     child: Padding(
                                       padding: const EdgeInsets.all(16.0),
                                       child: Column(
@@ -290,7 +247,7 @@ class MProfile extends StatelessWidget {
                                             CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
-                                            "Project",
+                                            "Email",
                                             style: TextStyle(
                                               fontSize: 12,
                                               fontWeight: FontWeight.w500,
@@ -302,48 +259,7 @@ class MProfile extends StatelessWidget {
                                                 const EdgeInsets.only(top: 4.0),
                                             child: Expanded(
                                               child: Text(
-                                                "Technology",
-                                                style: TextStyle(
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.w600,
-                                                  color: Colors.grey[900],
-                                                ),
-                                              ),
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )),
-                                Container(
-                                    width: 163.5,
-                                    decoration: const BoxDecoration(
-                                        border: Border(
-                                            left: BorderSide(
-                                                width: 1,
-                                                color: Color.fromARGB(
-                                                    255, 235, 233, 233)))),
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(16.0),
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: <Widget>[
-                                          Text(
-                                            "Mobile",
-                                            style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.w500,
-                                              color: Colors.grey[400],
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(top: 4.0),
-                                            child: Expanded(
-                                              child: Text(
-                                                "98573837788",
+                                                "data_abc@mail.com  v ddd    ",
                                                 style: TextStyle(
                                                   fontSize: 14,
                                                   fontWeight: FontWeight.w600,
@@ -357,9 +273,89 @@ class MProfile extends StatelessWidget {
                                     )),
                               ],
                             ),
-                          ],
-                        )),
-                  ),
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                  width: 163.5,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          "Project",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w500,
+                                            color: Colors.grey[400],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsets.only(top: 4.0),
+                                          child: Expanded(
+                                            child: Text(
+                                              "Technology",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w600,
+                                                color: Colors.grey[900],
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )),
+                              Container(
+                                  width: 163.5,
+                                  decoration: const BoxDecoration(
+                                      border: Border(
+                                          left: BorderSide(
+                                              width: 1,
+                                              color: Color.fromARGB(
+                                                  255, 235, 233, 233)))),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          "Mobile",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w500,
+                                            color: Colors.grey[400],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsets.only(top: 4.0),
+                                          child: Expanded(
+                                            child: Text(
+                                              "98573837788",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w600,
+                                                color: Colors.grey[900],
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )),
+                            ],
+                          ),
+                        ],
+                      )),
                 ],
               )
             ],

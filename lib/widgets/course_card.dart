@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:neo/model/course.dart';
 // import 'package:neo/screens/mobile_home_page.dart';
 
 class CourseCard extends StatelessWidget {
-  const CourseCard({Key? key}) : super(key: key);
+  // const CourseCard({Key? key}) : super(key: key);
+  final Course course;
+
+  const CourseCard(this.course);
+
   @override
   Widget build(BuildContext context) {
+    // print("from card");
+    // print(this.course.endDate);
     return Container(
       width: 328,
       margin: const EdgeInsets.only(right: 8),
@@ -31,7 +38,7 @@ class CourseCard extends StatelessWidget {
                             children: <Widget>[
                               Expanded(
                                 child: Text(
-                                  'Identifying Phishing Attacks Can You Avoid Gedentifying Phishing Attacks Can dentifying Phishing Attacks Can tting Hooked',
+                                  course.courseTitle.toString(),
                                   style: TextStyle(
                                       fontSize: 14,
                                       height: 2,
@@ -48,7 +55,7 @@ class CourseCard extends StatelessWidget {
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 8.0),
                                   child: Text(
-                                    'MyAcademy',
+                                    course.creator.toString(),
                                     style: TextStyle(
                                       fontSize: 12,
                                       fontWeight: FontWeight.w500,
@@ -92,14 +99,22 @@ class CourseCard extends StatelessWidget {
                             ),
                           ],
                         ),
-                        const Text(
-                          '22 Dec 2021',
+                        Text(
+                          '${course.startDate?.toString()} ${course.endDate != null ? "," : ""} ${course.endDate?.toString() ?? ""}',
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                             color: Color.fromARGB(255, 33, 33, 33),
                           ),
-                        )
+                        ),
+                        // Text(
+                        //   course?.endDate?.toString() ?? "",
+                        //   style: TextStyle(
+                        //     fontSize: 12,
+                        //     fontWeight: FontWeight.w500,
+                        //     color: Color.fromARGB(255, 33, 33, 33),
+                        //   ),
+                        // )
                       ],
                     ),
                   ),
